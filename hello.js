@@ -19,7 +19,26 @@
 // console.log(divide(5, 2));
 // console.log(math);
 
-const math = require('./math');
+// const math = require('./math');
 
-console.log(math.add(2, 5));
-console.log(math.sub(4, 1));
+// console.log(math.add(2, 5));
+// console.log(math.sub(4, 1));
+
+const person = {
+  name: "Cherry",
+  age: 26
+};
+
+class Details {
+  constructor(name, role) {
+    this.name = name;
+    this.role = role;
+  }
+
+  greeting() {
+    console.log(`Hi ${this.name}! You have been promoted to ${this.role}`);
+  }
+}
+
+module.exports = { person,
+  Details };
